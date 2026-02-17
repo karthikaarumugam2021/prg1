@@ -1,136 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BookMyShow</title>
-    <style>
-        body{
-            font-family: Arial;
-            margin:0;
-            background:#f2f2f2;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookMyShow</title>
 
-        header{
-            background:#e53935;
-            color:white;
-            text-align:center;
-            padding:12px;
-            font-size:22px;
-            font-weight:bold;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        .movie{
-            display:flex;
-            background:white;
-            margin:15px;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.2);
-            overflow:hidden;
-        }
+body{
+    background:#f2f2f2;
+}
 
-        .movie img{
-            width:250px;
-            height:180px;
-            object-fit:cover;
-        }
+/* Header */
+header{
+    background:#e53935;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+}
 
-        .details{
-            padding:15px;
-            flex:1;
-        }
+/* Movie Card */
+.movie{
+    display:flex;
+    background:white;
+    margin:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
 
-        .tag{
-            background:#e53935;
-            color:white;
-            padding:3px 8px;
-            border-radius:20px;
-            font-size:12px;
-            margin-right:5px;
-        }
+/* Poster */
+.movie img{
+    width:200px;
+    height:250px;
+    object-fit:cover;
+}
 
-        .btn{
-            margin-top:15px;
-            background:#e53935;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            border-radius:5px;
-            cursor:pointer;
-        }
+/* Details */
+.details{
+    padding:15px;
+    flex:1;
+}
 
-        .btn:hover{
-            background:#c62828;
-        }
-    </style>
+.details h2{
+    margin-bottom:8px;
+}
+
+/* Genre tag */
+.tag{
+    background:#e53935;
+    color:white;
+    font-size:12px;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-right:5px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#e53935;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.btn:hover{
+    background:#b71c1c;
+}
+</style>
 </head>
 
 <body>
 
-<header>BookMyShow</header>
+<header>🎬 BookMyShow</header>
 
-<!-- Leo -->
+<!-- Movie 1 -->
 <div class="movie">
-    <img src="vijayimages.jpg">
+    <img src="vijayimages.jpg" alt="Leo">
     <div class="details">
-        <h3>Leo</h3>
+        <h2>Leo</h2>
         <span class="tag">Action</span>
         <span class="tag">Thriller</span>
-        <p>Release: 2023</p>
+        <p style="margin-top:10px;">Release: 2023</p>
         <p>Theatres: Vetri, AGS</p>
-        <a href="booking.html"><button class="btn">Book Tickets</button></a>
+        <a href="#" class="btn">Book Tickets</a>
     </div>
 </div>
 
-<!-- Jailer -->
+<!-- Movie 2 -->
 <div class="movie">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Jailer_film_poster.jpg">
+    <img src="rajiniimages.jpg" alt="Jailer">
     <div class="details">
-        <h3>Jailer</h3>
+        <h2>Jailer</h2>
         <span class="tag">Drama</span>
         <span class="tag">Action</span>
-        <p>Release: 2023</p>
+        <p style="margin-top:10px;">Release: 2023</p>
         <p>Theatres: Senthil, Saravana</p>
-        <a href="booking.html"><button class="btn">Book Tickets</button></a>
+        <a href="#" class="btn">Book Tickets</a>
     </div>
 </div>
 
-<!-- Vikram -->
+<!-- Movie 3 -->
 <div class="movie">
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Vikram_2022_film_poster.jpg">
+    <img src="vikramimages.jpg" alt="Vikram">
     <div class="details">
-        <h3>Vikram</h3>
+        <h2>Vikram</h2>
         <span class="tag">Action</span>
         <span class="tag">Crime</span>
-        <p>Release: 2022</p>
+        <p style="margin-top:10px;">Release: 2022</p>
         <p>Theatres: Vetri</p>
-        <a href="booking.html"><button class="btn">Book Tickets</button></a>
-    </div>
-</div>
-
-<!-- Jana Nayagan (sample image) -->
-<div class="movie">
-    <img src="vijayimages.jpg">
-    <div class="details">
-        <h3>Jana Nayagan</h3>
-        <span class="tag">Action</span>
-        <span class="tag">Crime</span>
-        <p>Release: 2022</p>
-        <p>Theatres: Vetri</p>
-        <a href="booking.html"><button class="btn">Book Tickets</button></a>
+        <a href="#" class="btn">Book Tickets</a>
     </div>
 </div>
 
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Booking</title>
-</head>
-<body style="font-family:Arial; text-align:center; padding-top:100px;">
-  <h1>🎟️ Ticket Booking Page</h1>
-  <p>Seat selection and payment can be added here.</p>
-  <br>
-  <a href="index.html">Back</a>
-</body>
-</html>
-<img src="vijayimages.jpg">
